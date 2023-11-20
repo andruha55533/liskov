@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+class Bird {
+  fly() {
+    console.log('Flying...');
+  }
+}
+
+class Penguin extends Bird {
+  fly() {
+    console.log('Penguins can\'t fly!');
+  }
+}
+
+function makeBirdFly(bird) {
+  bird.fly();
+}
+
+const bird = new Bird();
+const penguin = new Penguin();
+
+makeBirdFly(bird); 
+makeBirdFly(penguin); 
+    </script>
+</body>
+</html>
